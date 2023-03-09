@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useMemo } from "react";
+import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
+import { themeSettings } from "./theme.js";
+
+import HomePage from "modules/HomePage";
+import LoginPage from "modules/LoginPage";
+import ProfilePage from "modules/ProfilePage";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const mode = useSelector((s) => s.mode);
+	const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
+	return (
+		<div className="app">
+			<BrowserRouter>
+				<ThemeProvider theme={theme}>
+					<CssBaseline />
+					<Routes>
+						<Route path="/" element={<LoginPage />} />
+						<Route path="/login" element={<LoginPage />} />
+						<Route path="/home" element={<HomePage />} />
+						<Route
+							path="/profile/:userId"
+							element={<ProfilePage />}
+						/>
+						{/* fallback route */}
+						<Route path="*" element={<ProfilePage />} />
+					</Routes>
+				</ThemeProvider>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;
