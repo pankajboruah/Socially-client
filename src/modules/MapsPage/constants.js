@@ -1,0 +1,118 @@
+export const TOTAL_SUGGESTIONS_ALLOWED = 1;
+export const DEFAULT_SEASON_ID = "221";
+export const SUPPORTED_SEASON_IDS = ["221", "222"];
+
+export const PLACE_SOURCE_TYPES = {
+	PIPE_INSTALLATION_SRC: "PIPE_INSTALLATION_SRC",
+	USER_FARM: "USER_FARM",
+	INSIDE_BUND_SRC: "INSIDE_BUND_SRC",
+	AWD_SOUTH_2021: "AWD_SOUTH_2021",
+	SATELLITE_FARM: "SATELLITE_FARM",
+};
+
+export const ALL_LAYERS = {
+	"FARMS-SATELLITE_FARM-VILLAGE_FARM": {
+		PlaceNamespace: "FARMS",
+		PlaceGeometryType: "INVALID_GEOMETRY_TYPE",
+		MinZoomLevel: 16,
+		MaxZoomLevel: 17,
+		PlaceSourceType: PLACE_SOURCE_TYPES.SATELLITE_FARM,
+		PlaceVisibleType: "VILLAGE_FARM",
+	},
+	"FARMS-USER_FARM-VILLAGE_FARM": {
+		PlaceNamespace: "FARMS",
+		PlaceGeometryType: "INVALID_GEOMETRY_TYPE",
+		MinZoomLevel: 16,
+		MaxZoomLevel: 17,
+		PlaceSourceType: PLACE_SOURCE_TYPES.USER_FARM,
+		PlaceVisibleType: "VILLAGE_FARM",
+	},
+	"FARMS-PIPE_INSTALLATION_SRC-AWD_PROGRAM_TYPE": {
+		PlaceNamespace: "FARMS",
+		PlaceGeometryType: "INVALID_GEOMETRY_TYPE",
+		MinZoomLevel: 15,
+		MaxZoomLevel: 18,
+		PlaceSourceType: PLACE_SOURCE_TYPES.PIPE_INSTALLATION_SRC,
+		PlaceVisibleType: "AWD_PROGRAM_TYPE",
+	},
+	"FARMS-INSIDE_BUND_SRC-AWD_PROGRAM_TYPE": {
+		PlaceNamespace: "FARMS",
+		PlaceGeometryType: "INVALID_GEOMETRY_TYPE",
+		MinZoomLevel: 17,
+		MaxZoomLevel: 19,
+		PlaceSourceType: PLACE_SOURCE_TYPES.INSIDE_BUND_SRC,
+		PlaceVisibleType: "AWD_PROGRAM_TYPE",
+	},
+	"FARMS-INSIDE_BUND_SRC-DSR_PROGRAM_TYPE": {
+		PlaceNamespace: "FARMS",
+		PlaceGeometryType: "INVALID_GEOMETRY_TYPE",
+		MinZoomLevel: 16,
+		MaxZoomLevel: 19,
+		PlaceSourceType: PLACE_SOURCE_TYPES.INSIDE_BUND_SRC,
+		PlaceVisibleType: "DSR_PROGRAM_TYPE",
+	},
+	"FARMS-INSIDE_BUND_SRC-CRM_PROGRAM_TYPE": {
+		PlaceNamespace: "FARMS",
+		PlaceGeometryType: "INVALID_GEOMETRY_TYPE",
+		MinZoomLevel: 16,
+		MaxZoomLevel: 19,
+		PlaceSourceType: PLACE_SOURCE_TYPES.INSIDE_BUND_SRC,
+		PlaceVisibleType: "CRM_PROGRAM_TYPE",
+	},
+	// 'FARMS-AERATION_EVENT_1_SRC-AWD_PROGRAM_TYPE': {
+	// 	PlaceNamespace: 'FARMS',
+	// 	PlaceGeometryType: 'INVALID_GEOMETRY_TYPE',
+	// 	MinZoomLevel: 17,
+	// 	MaxZoomLevel: 19,
+	// 	PlaceSourceType: 'AERATION_EVENT_1_SRC',
+	// 	PlaceVisibleType: 'AWD_PROGRAM_TYPE',
+	// },
+	// 'FARMS-PIPE_INSTALLATION_SRC-AWD_22_KHARIF_PROGRAM_TYPE': {
+	// 	PlaceNamespace: 'FARMS',
+	// 	PlaceGeometryType: 'INVALID_GEOMETRY_TYPE',
+	// 	MinZoomLevel: 15,
+	// 	MaxZoomLevel: 17,
+	// 	PlaceSourceType: 'PIPE_INSTALLATION_SRC',
+	// 	PlaceVisibleType: 'AWD_22_KHARIF_PROGRAM_TYPE',
+	// },
+	// 'FARMS-AERATION_EVENT_2_SRC-AWD_PROGRAM_TYPE': {
+	// 	PlaceNamespace: 'FARMS',
+	// 	PlaceGeometryType: 'INVALID_GEOMETRY_TYPE',
+	// 	MinZoomLevel: 17,
+	// 	MaxZoomLevel: 19,
+	// 	PlaceSourceType: 'AERATION_EVENT_2_SRC',
+	// 	PlaceVisibleType: 'AWD_PROGRAM_TYPE',
+	// },
+	// 'FARMS-AERATION_EVENT_3_SRC-AWD_PROGRAM_TYPE': {
+	// 	PlaceNamespace: 'FARMS',
+	// 	PlaceGeometryType: 'INVALID_GEOMETRY_TYPE',
+	// 	MinZoomLevel: 17,
+	// 	MaxZoomLevel: 19,
+	// 	PlaceSourceType: 'AERATION_EVENT_3_SRC',
+	// 	PlaceVisibleType: 'AWD_PROGRAM_TYPE',
+	// },
+	// 'FARMS-USER_FARM_SBB-VILLAGE_FARM': {
+	// 	PlaceNamespace: 'FARMS',
+	// 	PlaceGeometryType: 'INVALID_GEOMETRY_TYPE',
+	// 	MinZoomLevel: 16,
+	// 	MaxZoomLevel: 19,
+	// 	PlaceSourceType: 'USER_FARM_SBB',
+	// 	PlaceVisibleType: 'VILLAGE_FARM',
+	// },
+	// 'PIPE_LOCATION-AWD_SOUTH_2021-PIPE': {
+	// 	PlaceNamespace: 'PIPE_LOCATION',
+	// 	PlaceGeometryType: 'INVALID_GEOMETRY_TYPE',
+	// 	MinZoomLevel: 17,
+	// 	MaxZoomLevel: 19,
+	// 	PlaceSourceType: 'AWD_SOUTH_2021',
+	// 	PlaceVisibleType: 'PIPE',
+	// },
+	// 'POLITICAL_NAMESPACE-AWD_SOUTH_2021-NO_VISIBLE_TYPE': {
+	// 	PlaceNamespace: 'POLITICAL_NAMESPACE',
+	// 	PlaceGeometryType: 'INVALID_GEOMETRY_TYPE',
+	// 	MinZoomLevel: 17,
+	// 	MaxZoomLevel: 19,
+	// 	PlaceSourceType: 'AWD_SOUTH_2021',
+	// 	PlaceVisibleType: 'NO_VISIBLE_TYPE',
+	// },
+};

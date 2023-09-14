@@ -8,6 +8,7 @@ import { themeSettings } from "./theme.js";
 import HomePage from "modules/HomePage";
 import LoginPage from "modules/LoginPage";
 import ProfilePage from "modules/ProfilePage";
+import MapsPage from "modules/MapsPage";
 
 function App() {
 	const mode = useSelector((s) => s.mode);
@@ -21,6 +22,7 @@ function App() {
 						<Route path="/" element={<LoginPage />} />
 						<Route path="/login" element={<LoginPage />} />
 						<Route path="/home" element={<HomePage />} />
+						<Route path="/maps" element={<MapsPage />} />
 						<Route
 							path="/profile/:userId"
 							element={<ProfilePage />}
